@@ -1,0 +1,44 @@
+#function for addition
+def add(x,y):
+    print('x+y:- ',x+y)
+    print()
+    return
+#function for Subtraction
+def minu(x,y):
+    print('x-y:- ',x-y)
+    print()
+    return
+#function for Multiplication
+def mul(x,y):
+    print('x*y:- ',x*y)
+    print()
+    return
+
+while(True):
+    print("1: Addition")
+    print("2: Minus")
+    print("3: Multiplication")
+    print("4: Exit")
+    print('Please enter a choice you want to perform: ')
+    #taking input choice from user
+    a = int(input())
+    #if user want to exit
+    if(a==4):
+        print('than you for using python calculator')
+        break
+    #taking input from user for values  of x and y
+    print("Please enter the value of x:")
+    x = int(input())
+    print("Please enter the value of y:")
+    y = int(input())
+    
+    #calling function according to user choices
+    if(a==1):
+        add(x,y)
+    elif(a==2):
+        minu(x,y)
+    elif(a==3):
+        mul(x,y)
+    else:
+        print("enter a valid choice")
+        
