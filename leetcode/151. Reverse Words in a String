@@ -1,0 +1,18 @@
+class Solution:
+    def reverseWords(self, s: str) -> str:
+      
+# T.C - O(n^2) S.C - O(n)
+        words = s.split()
+       # ans = words[::-1]
+        words.reverse()
+        ss = ' '.join(words)
+        return ss
+
+#  T.C - O(n) S.C - O(n)
+     '''words = s.split()
+        #ans = words[::-1]
+        ans=''
+        for i in words:
+            ans = i+' '+ans
+        ans = ans.strip()
+        return ans '''
